@@ -4,10 +4,6 @@ library(dplyr)
 source("/home/egeoffroy/Summary_Statistics/scripts/Man_QQ.R")
 all_dir <- list.dirs("/home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Fasting_glucose/", full.names=FALSE)
 print(all_dir)
-#for(dirs in all_dir){
-        #if(str_detect(dirs, "QT_interval")){
-        #print(paste("/home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik", dirs, sep='/'))
-        #setwd(paste("/home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik", dirs, sep='/'))
         setwd(paste("/home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Fasting_glucose/"))
         all_files = list.files(pattern = ".csv", full.names = TRUE, recursive = FALSE) #recursive is usually true except for plotting SMultiXcan results
         print(all_files)        
