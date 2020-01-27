@@ -8,7 +8,7 @@ library(qqman)
 options(warn=-1)
 
 BP_Chrome <- read.table("/home/egeoffroy/Summary_Statistics/BP_CHROM_2.txt", header = T)
-  BP_Chrome <- transform(BP_Chrome, chr=as.numeric(chr))
+  #BP_Chrome <- transform(BP_Chrome, chr=as.numeric(chr))
   BP_Chrome <- transform(BP_Chrome, BP=as.numeric(BP))
   BP_Chrome$GENE <- gsub("\\..*","",BP_Chrome$PROBE_ID)
   print(BP_Chrome)
