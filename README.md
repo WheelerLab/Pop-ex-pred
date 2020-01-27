@@ -15,6 +15,7 @@ Fast-Enloc pipeline for colocalization (Elyse and Isabelle)
 
 ### Step 2: Download GWAS Summary Statistics
 Link to the GWAS Catalog: https://www.ebi.ac.uk/gwas/
+
 Find a study from the GWAS Summary Statistics Spreadsheet to run with S-PrediXcan. Those including non-European individuals are highlighted in yellow. Those that are colored red have already been tested. 
 
 Find the particular study by searching the PMID in the GWAS Catalog. Find the study page, and copy the link address of the Summary Statistics found at the bottom right of the page. 
