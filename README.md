@@ -22,6 +22,6 @@ Find the particular study by searching the PMID in the GWAS Catalog. Find the st
 
 `wget link_from_catalog`
 
-If that does not work, download the data directly to the lab computers as a Guest User. From there, run this in the terminal:
+If that does not work, download the data as a Guest User directly to the lab computers. From there, run this in the terminal:
 
 `scp -r filepathToDataFromDownloads username@server:/filepath/to/save/to`
