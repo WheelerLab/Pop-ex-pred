@@ -1,0 +1,14 @@
+#S-PrediXcan for MESA and Morris
+#!/bin/bash
+cd /home/egeoffroy/MetaXcan/software/
+
+#For Glomerular Filtration Rate
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/ALL_imputed_10_peer_3_pcs__v2.db --covariance /home/egeoffroy/MESA/ALL_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Morris/MorrisAP_30604766_GCST007344/ --gwas_file_pattern ".*gz"  --snp_column SNV --effect_allele_column Effect_allele --non_effect_allele_column Other_allele --beta_column Effect --pvalue_column P_value --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Morris/MESA_ALL.csv
+
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/AFA_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/AFA_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Morris/MorrisAP_30604766_GCST007344/ --gwas_file_pattern ".*gz"  --snp_column SNV --effect_allele_column Effect_allele --non_effect_allele_column Other_allele --beta_column Effect --pvalue_column P_value --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Morris/MESA_AFA.csv
+
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/AFHI_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/AFHI_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Morris/MorrisAP_30604766_GCST007344/ --gwas_file_pattern ".*gz"  --snp_column SNV --effect_allele_column Effect_allele --non_effect_allele_column Other_allele --beta_column Effect --pvalue_column P_value --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Morris/MESA_AFHI.csv
+
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/HIS_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/HIS_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Morris/MorrisAP_30604766_GCST007344/ --gwas_file_pattern ".*gz"  --snp_column SNV --effect_allele_column Effect_allele --non_effect_allele_column Other_allele --beta_column Effect --pvalue_column P_value --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Morris/MESA_HIS.csv
+
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Morris/MorrisAP_30604766_GCST007344/ --gwas_file_pattern ".*gz"  --snp_column SNV --effect_allele_column Effect_allele --non_effect_allele_column Other_allele --beta_column Effect --pvalue_column P_value --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Morris/MESA_CAU.csv
