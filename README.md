@@ -5,13 +5,21 @@
   build predictors combining continental groups and all pops (Jenny and Elyse)
   Jenny and Elyse will rerun MatrixEQTL and PredictDB elastic net pipeline on all HapMap pops and continent combos with the   newly mapped ENSG IDs - Dr. Wheeler needs to move Jenny's results to ROCKS cluster at Stritch
 
+## Models:
+#### International HapMap Project Models
+1. ALL model: all seven populations 
+2. ASN model: two East Asian populations
+3. AFR model: three African populations
+
 
 ## GWAS Catalog Summary Stats S-PrediXcan
 Use HapMap models and MESA models in S-PrediXcan of relevant GWAS Catalog Summary Statistics (Elyse and Isabelle)
-Fast-Enloc pipeline for colocalization (Elyse and Isabelle)
+Fast-Enloc pipeline for colocalization (Elyse and Isabelle).
 
 ### Step 1: Clone the S-PrediXcan repository to your workspace/
 `git clone https://github.com/hakyimlab/MetaXcan.git`
+
+S-PrediXcan is an extension of PrediXcan that takes GWAS Summary Statistics and gene expression prediction models to make PrediXcan-level associations. 
 
 ### Step 2: Download GWAS Summary Statistics
 Link to the GWAS Catalog: https://www.ebi.ac.uk/gwas/
