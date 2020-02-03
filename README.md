@@ -10,7 +10,7 @@
 1. ALL model: all seven populations 
 2. ASN model: two East Asian populations
 3. AFR model: three African populations
-
+![Map of the various HapMap populations along with a table of the number of individuals](HapMap_populations.png)
 
 ## GWAS Catalog Summary Stats S-PrediXcan
 Use HapMap models and MESA models in S-PrediXcan of relevant GWAS Catalog Summary Statistics (Elyse and Isabelle)
