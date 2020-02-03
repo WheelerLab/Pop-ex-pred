@@ -8,9 +8,18 @@
 ## Models:
 #### International HapMap Project Models
 1. ALL model: all seven populations 
-2. ASN model: two East Asian populations
-3. AFR model: three African populations
+2. ASN model: two East Asian populations--Han Chinese and Japanese
+3. AFR model: three African populations-- Luhya, Maasai, and Yoruba 
 ![Map of the various HapMap populations along with a table of the number of individuals](HapMap_populations.png)
+
+#### Multi-Ethic Study of Atherosclerosis (MESA)
+1. ALL model: European, African American, and Hispanic populations combined
+2. AFA model: African American population, n = 233
+3. AFHI model: African American population and Hispanic population combined
+4. HIS model: Hispanic population, n = 352
+5. CAU model: European population, n = 578
+
+![Map of MESA and HapMap populations with circles weighted to represent the number of individuals](MESA_and_HapMap.png)
 
 ## GWAS Catalog Summary Stats S-PrediXcan
 Use HapMap models and MESA models in S-PrediXcan of relevant GWAS Catalog Summary Statistics (Elyse and Isabelle)
