@@ -26,6 +26,8 @@ Use HapMap models and MESA models in S-PrediXcan of relevant GWAS Catalog Summar
 Fast-Enloc pipeline for colocalization (Elyse and Isabelle).
 
 ### Step 1: Clone the S-PrediXcan repository to your workspace/
+To clone the repository into your workspace, run the following in 
+
 `git clone https://github.com/hakyimlab/MetaXcan.git`
 
 S-PrediXcan is an extension of PrediXcan that takes GWAS Summary Statistics and gene expression prediction models to make PrediXcan-level associations. 
@@ -35,7 +37,7 @@ Link to the GWAS Catalog: https://www.ebi.ac.uk/gwas/
 
 Find a study from the GWAS Summary Statistics Spreadsheet to run with S-PrediXcan. Those including non-European individuals are highlighted in yellow. Those that are colored red have already been tested. 
 
-Find the particular study by searching the PMID in the GWAS Catalog. Find the study page, and copy the link address of the Summary Statistics found at the bottom right of the page. 
+Find the particular study by searching the PMID in the GWAS Catalog. Find the study page, and copy the link address of the Summary Statistics found at the bottom right of the page. From the terminal, run: 
 
 `wget link_from_catalog`
 
