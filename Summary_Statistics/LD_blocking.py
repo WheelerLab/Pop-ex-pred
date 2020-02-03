@@ -1,7 +1,5 @@
 import gzip
 import csv
-#import numpy as np
-#import matplotlib.pyplot as plt
 import pandas as pd
 dataset = []
 
@@ -18,15 +16,14 @@ i = 1
 table = []
 with open('/home/egeoffroy/fourier_ls-all.bed', 'r') as f:
     reader = csv.reader(f, dialect='excel', delimiter='\t')
-
-for row in reader:
-  row.append("Loc" + str(i))
-  i+=1
+    for row in reader:
+        row.append("Loc" + str(i))
+    i+=1
 
 for j in range(len(file_content)):
         for k in range(len(row)):
                 if(int(file_content['Position_hg19'][j]) > int(row[1]) and int(file_content['Position_hg19'][j]) < int(row[2])):
-                        joined =  ['chr' + str(file_content['Chr'][j]) + "_" +  str(int(file_content['Position_hg19'][j])) + "_" + str(file_content['Effect-allele'][j]) + '_' + str(file_content['Other-allele'][j]) + '_b19', str(row[3]), str(file_content['Z-score'][j])]
+                        joined =  'chr' + str(file_content['Chr'][j]) + "_" +  str(int(file_content['Position_hg19'][j])) + "_" + str(file_content['Effect-allele'][j]) + '_' + str(file_content['Other-allele'][j]) + '_b19', str(row[3]), str(file_content['Z-score'][j])
                         #print(joined)
                         outfile.write(joined)
 
