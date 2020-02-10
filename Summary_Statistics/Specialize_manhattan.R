@@ -64,7 +64,7 @@ print(model)
   signif <- unique(signif)  
   
   png(file = paste("/", directory, "/", model,  name, "_present_man.png", sep=""))
-  manhattan(GWAS, main = title, suggestiveline = 0, genomewideline = threshold, highlight = signif$GENE)
+  manhattan(GWAS, main = title, suggestiveline = 0, genomewideline = threshold, highlight = signif$BP)
   dev.off()
   
   #png(file = paste("/", directory, "/", model, name, "_present_qq.png", sep=""))
