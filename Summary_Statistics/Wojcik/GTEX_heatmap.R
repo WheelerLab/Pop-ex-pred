@@ -21,3 +21,27 @@ for(files in all_files){
         #}
 }
 
+print(list_group)
+new_table <- data.frame(phenotype=character(), significant_hits=integer(), stringsAsFactors=FALSE)
+
+for(i in 1:length(list_group)){
+  file <- paste("/home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/", str_remove(list_group[i], "./"), sep = "")
+  print(file)
+  S_Pred_file <- fread(file, header = T,  sep = ',')
+  S_Pred_file <- subset(S_Pred_file, select=c("gene_name"))
+  tissue <- strsplit(file, "/")
+  pheno <- tissue[[1]][6]
+  print(pheno)
+  tissue <- tissue[[1]][8]
+  print(tissue)
+  S_Pred_file$tissue <- rep(tissue, nrow(S_Pred_file))
+  S_Pred_file$phenotype <- rep(pheno, nrow(S_Pred_file))
+  S_Pred_file$significant_hits <- rep(nrow(S_Pred_file), nrow(S_Pred_file))
+  #num_signif <- nrow(S_Pred_file)
+  S_Pred_file <- subset(S_Pred_file, select=c("tissue", "phenotype", "significant_hits"))
+  new_table <- rbind(new_table, S_Pred_file)
+  print(new_table)
+}
+new_table <- new_table[order(significant_hits), ]
+head(new_table)
+new_table <- unique(new_table)
