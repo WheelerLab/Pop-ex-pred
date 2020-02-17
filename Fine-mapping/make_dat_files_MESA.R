@@ -4,13 +4,15 @@ library(data.table)
 chr <- c(1:22)
 test_chr <- 1
 group_id <- c("afa", "his", "cau")
+group <- c("AFA", "HIS", "CAU")
+j = 1
 for(id in group_id){
   for(CHR in chr){
-    dosage <- fread(paste("/home/hwheeler1/MESA_dbGaP_55081/mesa_imputation", id, "/UMich_dosages/chr", CHR, ".maf0.01.r20.8noambig.dosage.txt.gz", sep = ''), header = F, stringsAsFactors = FALSE)
+    dosage <- fread(paste("/home/hwheeler1/MESA_dbGaP_55081/mesa_imputation_", id, "/UMich_dosages/chr", CHR, ".maf0.01.r20.8noambig.dosage.txt.gz", sep = ''), header = F, stringsAsFactors = FALSE)
 
-    expression <- fread("/home/egeoffroy/AFR_expression_ens.txt", header = TRUE, stringsAsFactors = FALSE)
+    expression <- fread(paste("/home/rschubert1/MESA_data_for_elyse/", group[j], "_PF10.txt.gz", sep =''), header = TRUE, stringsAsFactors = FALSE)
     print(head(expression))
-    snps_in_file <- fread("/home/egeoffroy/new_PredDB/AFR_unfiltered_total_snps_in_model.txt", header = FALSE, stringsAsFactors = FALSE)
+    snps_in_file <- fread(paste("/home/egeoffroy/new_PredDB/", group[j], "_snps_in_model.txt", sep = ''), header = FALSE, stringsAsFactors = FALSE)
     #print(snps_in_file)
     for(ex in nrow(expression)){
       genotype <- data.frame()
@@ -34,9 +36,10 @@ for(id in group_id){
         }
         genotype <- rbind(genotype, genotypes)
         colnames(genotype) <- header
-      write.table(paste(gene, ".dat", sep = ''), header = T, quote = F)
+      write.table(paste("/home/egeoffroy/", group[j], "_dat_files/", gene, ".dat", sep = ''), header = T, quote = F)
       }
 
     }
    }
+  j <- j+1
 }
