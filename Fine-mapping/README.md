@@ -14,6 +14,10 @@ This script calls dap-g using the appropriate estimate file from MESA_make_estim
 Sample size: a numeric value. Use option -d_n sample_size to specify the sample szie.
 Total sum of squares of phenotype: a numeric value. Use option -d_syy SST_value to specify SST.
 
+How to call script: 
+```
+bash MESA_dapg_run.sh /home/elyse/AFA_estimate.txt /home/elyse/LD_AFA_matrix.txt 233 SST(?)
+```
 Example dap-g call: 
 ```
 dap-g -d_est sample_data/sim.1.est.dat -d_ld sample_data/sim.1.LD.dat -d_n 343 -d_syy 515.6
