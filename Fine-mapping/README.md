@@ -8,6 +8,16 @@ Estimate file requirements for DAP-G: contains effect size estimates and corresp
 ```
 snp_name_i  b_i  se(b_i)
 ```
+### MESA_dapg_run.sh
+This script calls dap-g using the appropriate estimate file from MESA_make_estimates.R and the LD correlation matrix file formed in LD_correlation_matrix.R. This step also requires the number of individuals in the model and the total sum of squares. 
+
+Sample size: a numeric value. Use option -d_n sample_size to specify the sample szie.
+Total sum of squares of phenotype: a numeric value. Use option -d_syy SST_value to specify SST.
+
+Example dap-g call: 
+```
+dap-g -d_est sample_data/sim.1.est.dat -d_ld sample_data/sim.1.LD.dat -d_n 343 -d_syy 515.6
+```
 
 ## Wojcik GWAS Summary Statistics Preparation Steps
 
