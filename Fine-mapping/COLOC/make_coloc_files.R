@@ -3,6 +3,7 @@ library(dplyr)
 library(R.utils)
 
 "%&%" = function(a,b) paste(a,b,sep="")
+args = commandArgs(trailingOnly=TRUE)
 phenofile <- args[1]
 phenos <- args[2]
 n <- args[3]
