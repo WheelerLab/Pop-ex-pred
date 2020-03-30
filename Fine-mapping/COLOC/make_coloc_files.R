@@ -67,10 +67,10 @@ for(pop in 1:length(pops)){ #read in pop's .frq file for MAF
     #GWAS_write <- GWAS_write[order(GWAS_write$gene_id),] #don't order a column that doesn't exist
     eQTL_write <- eQTL_write[order(eQTL_write$gene_id),]
 
-    fwrite(eQTL_write, "/home/elyse/coloc/eQTL_" %&% pops[pop] %&% "_" %&% pheno %&% ".txt", quote = F, sep = "\t", na = "NA", row.names = F, col.names = T)
-    gzip("/home/elyse/coloc/eQTL_" %&% pops[pop] %&% "_" %&% pheno %&% ".txt", destname = "/home/elyse/coloc/eQTL_" %&% pops[pop] %&% "_" %&% pheno %&% ".txt.gz") #script may only take .gz values so can't hurt to be too careful
-    fwrite(GWAS_write, "/home/elyse/coloc/GWAS_" %&% pops[pop] %&% "_" %&% pheno %&% ".txt", row.names = F, col.names = T, sep = "\t", quote = F, na = "NA")
-    gzip("/home/elyse/coloc/GWAS_" %&% pops[pop] %&% "_" %&% pheno %&% ".txt", "/home/elyse/coloc/GWAS_" %&% pops[pop] %&% "_" %&% pheno %&% ".txt.gz")
+    fwrite(eQTL_write, "/coloc/eQTL_" %&% pops[pop] %&% "_" %&% pheno %&% ".txt", quote = F, sep = "\t", na = "NA", row.names = F, col.names = T)
+    gzip("/coloc/eQTL_" %&% pops[pop] %&% "_" %&% pheno %&% ".txt", destname = "/coloc/eQTL_" %&% pops[pop] %&% "_" %&% pheno %&% ".txt.gz") #script may only take .gz values so can't hurt to be too careful
+    fwrite(GWAS_write, "/coloc/GWAS_" %&% pops[pop] %&% "_" %&% pheno %&% ".txt", row.names = F, col.names = T, sep = "\t", quote = F, na = "NA")
+    gzip("/coloc/GWAS_" %&% pops[pop] %&% "_" %&% pheno %&% ".txt", "/coloc/GWAS_" %&% pops[pop] %&% "_" %&% pheno %&% ".txt.gz")
     print("Completed with " %&% pops[pop] %&% ", for " %&% pheno %&% ".")
   }
 }
