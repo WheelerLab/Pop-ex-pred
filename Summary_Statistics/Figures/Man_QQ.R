@@ -38,7 +38,7 @@ make_plots <- function(S_Pred_file, directory, title, name){
         model <- "HapMap_ALL"
    }
 
-print(model)
+  print(model)
   S_Pred_file <- read.table(S_Pred_file, header = T,  sep = ',')
   #print(S_Pred_file)
   
@@ -49,7 +49,7 @@ print(model)
   S_Pred_file <- S_Pred_file[-c( 9)]
   names(S_Pred_file)[names(S_Pred_file) == 'pvalue'] <- 'P'
 
-GWAS <- merge(S_Pred_file, BP_Chrome, by = c('GENE', 'gene_name'))
+  GWAS <- merge(S_Pred_file, BP_Chrome, by = c('GENE', 'gene_name'))
   GWAS <- na.omit(GWAS)
   colnames(GWAS)[14] <- "CHR"
   GWAS <- GWAS %>%  #added by Jenny
