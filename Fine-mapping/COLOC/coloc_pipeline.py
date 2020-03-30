@@ -51,4 +51,4 @@ populations = {
 }
 
     
-os.system('bash run_coloc.sh ' + pop + ' ' + phenoid + ' ' + populations.get(pop)    
+os.system('bash run_coloc.sh ' + pop + ' ' + phenoid + ' ' + populations.get(pop))    
