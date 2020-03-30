@@ -18,7 +18,7 @@ if(population == 'HapMap'){
   pops_sample_size <- c(107)
 }
 
-sig_gene_SNPs <- fread(paste("/home/elyse/GWAS_SNPs_', phenos, ".txt", sep = ''), header = F) #so we don't run all the SNPs b/c it takes forever
+sig_gene_SNPs <- fread(paste("/home/elyse/GWAS_SNPs_", phenos, ".txt", sep = ''), header = F) #so we don't run all the SNPs b/c it takes forever
 sig_gene_SNPs <- sig_gene_SNPs$V1
 
 for(pop in 1:length(pops)){ #read in pop's .frq file for MAF
@@ -42,8 +42,13 @@ for(pop in 1:length(pops)){ #read in pop's .frq file for MAF
     eQTL_write <- data.frame(gene_id = character(), variant_id = character(), maf = numeric(), pval_nominal = numeric(), slope = numeric(), slope_se = numeric(), stringsAsFactors = F)
 
     for(chr in chrs){ #yes triple loops are ratchet
-      system("zcat -f /home/wheelerlab3/files_for_revisions_plosgen/meqtl_results/MESA/" %&% pops[pop] %&% "_Nk_10_PFs_chr" %&% chr %&% "pcs_3.meqtl.cis.* > /home/elyse/coloc/meQTL_MESA_input.txt") #fread doesn't seem to like wildcards so we're gonna do this the ugly way
-      meqtl <- fread("/home/elyse/coloc/meQTL_MESA_input.txt", nThread = 40) #read in matrix eQTL results
+      if(population == 'MESA'){
+             system("zcat -f /home/wheelerlab3/files_for_revisions_plosgen/meqtl_results/MESA/" %&% pops[pop] %&% "_Nk_10_PFs_chr" %&% chr %&% "pcs_3.meqtl.cis.* > /home/elyse/coloc/meQTL_MESA_input.txt") #fread doesn't seem to like wildcards so we're gonna do this the ugly way
+             meqtl <- fread("/home/elyse/coloc/meQTL_MESA_input.txt", nThread = 40) #read in matrix eQTL results
+      }
+      if(population == 'HapMap'){
+             meqtl <- fread("/home/elyse/meqtl_YRI_input.txt", nThread = 40) #read in matrix eQTL results
+      }
       meqtl$se <- meqtl$beta / meqtl$statistic #make your own standard error since it's not in the meQTL output
       meqtl$n_samples <- pops_sample_size[pop]
       meQTL_for_COLOC <- left_join(meqtl, frq, by = c("snps" = "SNP")) #add freq to COLOC input
