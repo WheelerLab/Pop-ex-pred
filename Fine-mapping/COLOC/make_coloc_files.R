@@ -7,11 +7,11 @@ print(getwd())
 "%&%" = function(a,b) paste(a,b,sep="")
 args = commandArgs(trailingOnly=TRUE)
 phenofile <- args[1]
-meqtlfile <- args[2]
-frqfile <- args[3]
-phenos <- args[4]
-n <- args[5]
-pop <- args[6]
+frqfile <- args[2]
+phenos <- args[3]
+n <- args[4]
+pop <- args[5]
+meqtlfile <- args[6]
 
 chrs <- c(1:22)
 if(pop == 'AFA'){
