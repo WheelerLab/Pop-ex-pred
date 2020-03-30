@@ -10,11 +10,18 @@ def check_arg(args=None):
                         required='True'
                         )
     parser.add_argument('-b', '--pop',
-                        help='population group: either MESA or HapMap',
+                        help='population',
                         required='True'
                         )
     parser.add_argument('-gwas', '--gwas_SS',
                         help='GWAS Summary Statistics File',
+                        required='True'
+                        )
+    parser.add_argument('-meqtl', '--meqtl',
+                        help='meQTL file'
+                        )
+    parser.add_argument('-frq', '--frq',
+                        help='.frq file',
                         required='True'
                         )
     return parser.parse_args(args)
@@ -23,20 +30,25 @@ def check_arg(args=None):
 args = check_arg(sys.argv[1:])
 phenoid = args.pheno_id
 pop = args.pop
+frqfile = args.frq
 gwasSS = args.gwas_SS
 
 os.system('mkdir coloc')
-#os.system('Rscript SNP_list.R ' + gwasSS + ' ' + phenoid)
 command = 'Rscript SNP_list.R ' + gwasSS + ' ' + phenoid
 result = subprocess.getoutput(command)
-os.system('Rscript make_coloc_files.R ' + gwasSS + ' ' + phenoid + ' ' + result) #currently only for MESA models
+if args.meqtl:
+    os.system('Rscript make_coloc_files.R ' + gwasSS + ' ' + args.meqtl + ' ' + frqfile + ' ' + phenoid + ' ' + result + ' ' + pop) #currently only for MESA models
+else:
+    os.system('Rscript make_coloc_files.R ' + gwasSS + ' ' + frqfile + ' ' + phenoid + ' ' + result + ' ' + pop) #currently only for MESA models
 
-if pop == "MESA":
-    populations = ["AFA", "AFHI", "CAU", "HIS", "ALL"]
-    population_size = [233, 585, 578, 352, 1163]
-if pop == 'HapMap'"
-    populations = ["YRI"]
-    population_size = [107]
+populations = {
+  "AFA": 233,
+  "AFHI": 585,
+  "CAU": 578,
+  "HIS": 352,
+  "ALL": 1163,
+  "YRI": 107
+}
+
     
-for population in range(len(populations)):
-        os.system('bash run_coloc.sh ' + populations[population] + ' ' + phenoid + ' ' + population_size[population])    
+os.system('bash run_coloc.sh ' + pop + ' ' + phenoid + ' ' + populations.get(pop)    
