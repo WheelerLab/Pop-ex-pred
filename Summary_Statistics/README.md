@@ -7,6 +7,14 @@ https://docs.google.com/spreadsheets/d/1fRoGqGHPf2-1-7KyINZn1FIxCyZrCNwuIldNfXpZ
 ## S-PrediXcan
 We ran S-PrediXcan using each of the MESA models and all of the GTEx v7 and v8 models with the all available non-European GWAS Summary Statistics from the GWAS Catalog.
 
+The GWAS Summary Statistics we ran include GWAS from:
+*Wojcik et al 2019
+*Malik
+*Horikoshi
+*Morris
+*Lu
+
+
 ## S-MultiXcan
 After running all of the GTEx Tissues with S-PrediXcan, you can run S-MultiXcan. S-MultiXcan looks for trait associations across all of the GTEx tissues. 
 
