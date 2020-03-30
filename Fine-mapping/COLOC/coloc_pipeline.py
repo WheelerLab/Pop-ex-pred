@@ -25,6 +25,7 @@ phenoid = args.pheno_id
 pop = args.pop
 gwasSS = args.gwas_SS
 
+os.system('mkdir coloc')
 #os.system('Rscript SNP_list.R ' + gwasSS + ' ' + phenoid)
 command = 'Rscript SNP_list.R ' + gwasSS + ' ' + phenoid
 result = subprocess.getoutput(command)
