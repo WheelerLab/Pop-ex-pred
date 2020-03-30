@@ -33,7 +33,7 @@ if(pop == 'YRI'){
   pop_sample_size <- 107
 }
 
-sig_gene_SNPs <- fread(paste("GWAS_SNPs_", phenos, ".txt", sep = ''), header = F) #so we don't run all the SNPs b/c it takes forever
+sig_gene_SNPs <- fread(paste("/coloc/GWAS_SNPs_", phenos, ".txt", sep = ''), header = F) #so we don't run all the SNPs b/c it takes forever
 sig_gene_SNPs <- sig_gene_SNPs$V1
 
   frq <- fread(frqfile)
