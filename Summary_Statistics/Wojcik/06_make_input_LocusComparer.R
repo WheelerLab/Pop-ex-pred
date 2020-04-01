@@ -4,6 +4,10 @@ library(data.table)
 "%&%" = function(a,b) paste(a,b,sep="")
 pop <- c("AFA")
 pheno <- c("WBC")
+
+sig_gene_SNPs <- fread(paste("/coloc/GWAS_SNPs_", phenos, ".txt", sep = ''), header = F) #so we don't run all the SNPs b/c it takes forever
+sig_gene_SNPs <- sig_gene_SNPs$V1
+
 for(pop in 1:length(pops)){ #read in pop's .frq file for MAF
   frq <- fread("/home/angela/px_his_chol/MESA_compare/" %&% pops[pop] %&% ".frq")
   frq <- frq %>% dplyr::select(SNP, MAF)
