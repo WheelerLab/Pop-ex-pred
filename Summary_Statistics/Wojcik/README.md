@@ -9,5 +9,9 @@
 02b: run GTEx v8 models
 
 ## 03: run S-MultiXcan with the GTEx S-PrediXcan output
+03: run GTEx v7 models
+03b: run GTEx v8 models
 
+## 04: combine all of the significant genes files together
 
+## 05: check if the new harmonised data released by GWAS Catalog matches the old GWAS Summary Statistics data and output by running S-PrediXcan on the White Blood Cell Count phenotype.
