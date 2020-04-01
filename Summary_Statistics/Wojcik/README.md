@@ -17,3 +17,5 @@
 ### 04: Combine all of the significant genes files together
 
 ### 05: Check if the new harmonised data released by GWAS Catalog matches the old GWAS Summary Statistics data and output by running S-PrediXcan on the White Blood Cell Count phenotype.
+
+### 06: Preliminary script to properly format the input for LOCUS Comparer. 
