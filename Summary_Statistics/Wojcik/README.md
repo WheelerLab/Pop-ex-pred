@@ -1,5 +1,8 @@
 # Wojcik et al 2019
 
+## [GWAS Catalog](https://www.ebi.ac.uk/gwas/publications/31217584)
+
+
 ## 01: run S-PrediXcan with the majority of GWAS Summary Statistics from the study
 *Note that these files were accessed before the availability of the harmonised form.*
 
