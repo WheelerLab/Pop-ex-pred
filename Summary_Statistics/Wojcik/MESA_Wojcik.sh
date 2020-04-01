@@ -297,5 +297,113 @@ cd /home/egeoffroy/MetaXcan/software/
 /home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/HIS_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/HIS_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Glomerular/WojcikGL_31217584_GCST008030/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Glomerular/MESA_HIS2.csv
 
 
-#For Height
+#Height
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/AFHI_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/AFHI_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Height53/WojcikGL_31217584_GCST008053/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Height53/MESA_AFHI2.csv
+
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/ALL_imputed_10_peer_3_pcs__v2.db --covariance /home/egeoffroy/MESA/ALL_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Height53/WojcikGL_31217584_GCST008053/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Height53/MESA_ALL2.csv
+
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/HIS_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/HIS_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Height53/WojcikGL_31217584_GCST008053/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Height53/MESA_HIS2.csv
+
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Height53/WojcikGL_31217584_GCST008053/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Height53/MESA_CAU2.csv
+
+
+
+
+#Fasting glucose
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/AFHI_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/AFHI_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Fasting_glucose/WojcikGL_31217584_GCST008033/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Fasting_glucose/MESA_AFHI2.csv
+
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/ALL_imputed_10_peer_3_pcs__v2.db --covariance /home/egeoffroy/MESA/ALL_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Fasting_glucose/WojcikGL_31217584_GCST008033/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Fasting_glucose/MESA_ALL2.csv
+
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/HIS_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/HIS_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Fasting_glucose/WojcikGL_31217584_GCST008033/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Fasting_glucose/MESA_HIS2.csv
+
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Fasting_glucose/WojcikGL_31217584_GCST008033/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Fasting_glucose/MESA_CAU2.csv
+
+
+
+#Run CAU Models
+
+#For QRS Interval
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/QRS_duration/WojcikGL_31217584_GCST008054/SumStats/ --gwas_file_pattern ".*gz"  --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/QRS_interval/MESA_CAU.csv
+
+#For Coffee Consumption
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Coffee/WojcikGL_31217584_GCST008028/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Coffee/MESA_CAU.csv
+
+#For Diabetes
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Diabetes/WojcikGL_31217584_GCST008048/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Diabetes/MESA_CAU.csv
+
+#For End Stage Renal Disease
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/End_renal/WojcikGL_31217584_GCST008031/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/End_renal/MESA_CAU.csv
+
+#For Fasting Insulin
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Fasting_insulin/WojcikGL_31217584_GCST008033/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Fasting_insulin/MESA_CAU.csv
+
+#For Hemoglobin AC
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Hemoglobin/WojcikGL_31217584_GCST008034/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Hemoglobin/MESA_CAU.csv
+
+#For LDL Cholesterol Levels
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/LDL_cholesterol/WojcikGL_31217584_GCST008037/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/LDL_cholesterol/MESA_CAU.csv
+
+#For PR
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/PR/WojcikGL_31217584_GCST008042/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/PR/MESA_CAU.csv
+
+#For QT Interval
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/QT_interval/SumStats/ —gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/QT_interval/MESA_CAU.csv
+
+#For Smoking 
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Smoking/WojcikGL_31217584_GCST008027/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Smoking/MESA_CAU.csv
+
+#Total Cholesterol
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Total_cholesterol/WojcikGL_31217584_GCST008045/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Total_cholesterol/MESA_CAU.csv
+
+#For Waist Hip Ratio 50
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Waist-hip50/WojcikGL_31217584_GCST008050/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Waist-hip50/MESA_CAU.csv
+
+#For Waist Hip Ratio 51
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Waist-hip51/WojcikGL_31217584_GCST008051/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Waist-hip51/MESA_CAU.csv
+
+#For Waist Hip Ratio 52
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Waist-hip52/WojcikGL_31217584_GCST008052/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Waist-hip52/MESA_CAU.csv
+
+#For White Blood Cell count
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/White_blood/WojcikGL_31217584_GCST008049/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/White_blood/MESA_CAU.csv
+
+#For Triglyceride Levels
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Triglyceride/WojcikGL_31217584_GCST008046/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Triglyceride/MESA_CAU.csv
+
+#For Systolic Blood
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Systolic_blood/WojcikGL_31217584_GCST008044/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Systolic_blood/MESA_CAU.csv
+
+#For QRS duration
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/QRS_duration/WojcikGL_31217584_GCST008054/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/QRS_duration/MESA_CAU.csv
+
+#For Platelet count
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Platelet/WojcikGL_31217584_GCST008039/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Platelet/MESA_CAU.csv
+
+#For Mean_corpuscular hemoglobin
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Mean_corpuscular_hemoglobin/WojcikGL_31217584_GCST008038/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Mean_corpuscular_hemoglobin/MESA_CAU.csv
+
+#For Diastolic Blood
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Diastolic_blood/WojcikGL_31217584_GCST008029/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Diastolic_blood/MESA_CAU.csv
+
+#For Hypertension
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Hypertension/WojcikGL_31217584_GCST008036/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Hypertension/MESA_CAU.csv
+
+#For C-reactive
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/C-reactive/WojcikGL_31217584_GCST008055/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/C-reactive/MESA_CAU.csv
+
+#For Fasting glucose
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Fasting_glucose/WojcikGL_31217584_GCST008032/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Fasting_glucose/MESA_CAU.csv
+
+#For HDL_cholesterol
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/HDL_cholesterol/WojcikGL_31217584_GCST008035/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/HDL_cholesterol/MESA_CAU.csv
+
+#For Body_mass_index
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Body_mass_index/WojcikGL_31217584_GCST008025/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Body_mass_index/MESA_CAU.csv
+
+#For Chronic kidney
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Chronic_kidney/WojcikGL_31217584_GCST008026/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Chronic_kidney/MESA_CAU.csv
+
+#For Glomerular
+/home/egeoffroy/anaconda2/bin/python ./MetaXcan.py --model_db_path /home/egeoffroy/MESA/CAU_imputed_10_peer_3_pcs_v2.db --covariance /home/egeoffroy/MESA/CAU_nested_cv_all_covariances_10_peer_3pcs.txt.gz --gwas_folder /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Glomerular/WojcikGL_31217584_GCST008030/SumStats/ --gwas_file_pattern ".*gz" --snp_column rsid --effect_allele_column Effect-allele --non_effect_allele_column Other-allele --beta_column Beta --pvalue_column P-val --output_file /home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/Glomerular/MESA_CAU.csv
+
 
