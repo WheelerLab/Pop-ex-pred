@@ -8,15 +8,21 @@ https://docs.google.com/spreadsheets/d/1fRoGqGHPf2-1-7KyINZn1FIxCyZrCNwuIldNfXpZ
 We ran S-PrediXcan using each of the MESA models and all of the GTEx v7 and v8 models with the all available non-European GWAS Summary Statistics from the GWAS Catalog.
 
 The GWAS Summary Statistics we ran include GWAS from:
-*Wojcik et al 2019--MESA, GTEx v7, GTEx v8
+* Wojcik et al 2019--MESA, GTEx v7, GTEx v8
 
-*Malik et al 2018--MESA
-*Horikoshi et al 2016--MESA
-*Morris et al 2019--MESA
-*Wuttke et al 2019--MESA
-*Lu et al 2016--MESA
-*Justice et al 2019--MESA
-*Prins et al 2018--MESA
+* Malik et al 2018--MESA
+
+* Horikoshi et al 2016--MESA
+
+* Morris et al 2019--MESA
+
+* Wuttke et al 2019--MESA
+
+* Lu et al 2016--MESA
+
+* Justice et al 2019--MESA
+
+* Prins et al 2018--MESA
 
 
 ## S-MultiXcan
