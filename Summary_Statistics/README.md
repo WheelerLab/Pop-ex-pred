@@ -33,5 +33,16 @@ After running all of the GTEx Tissues with S-PrediXcan, you can run S-MultiXcan.
 ```
 
 The GWAS Summary Statistics we ran include GWAS from:
-* Wojcik et al 2019--GTEx v7
-* Wojcik et al 2019--GTEx v8
+* Wojcik et al 2019--(GTEx v7)[http://predictdb.org/]
+* Wojcik et al 2019--(GTEx v8)[http://predictdb.org/]
+
+## Models Used
+
+### Multi-Ethnic Study of Atherosclerosis
+Five models: one for each of the populations, the AFA and HIS combined (AFHI), and all three cohorts combined (ALL)
+
+MESA population data contains monocyte data from African American (AFA, n = 233), Hispanic (HIS, n = 352), and European (CAU, n =578) individuals.
+
+### GTEx v7 Tissue Models
+
+### GTEx v8 Tissue Models
