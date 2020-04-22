@@ -33,8 +33,8 @@ After running all of the GTEx Tissues with S-PrediXcan, you can run S-MultiXcan.
 ```
 
 The GWAS Summary Statistics we ran include GWAS from:
-* Wojcik et al 2019--(GTEx v7)[http://predictdb.org/]
-* Wojcik et al 2019--(GTEx v8)[http://predictdb.org/]
+* Wojcik et al 2019--[GTEx v7](http://predictdb.org/)
+* Wojcik et al 2019--[GTEx v8](http://predictdb.org/)
 
 ## Models Used
 
