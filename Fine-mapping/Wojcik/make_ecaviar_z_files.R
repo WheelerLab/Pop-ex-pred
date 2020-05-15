@@ -1,3 +1,4 @@
+#Formats eCAVIAR GWAS and eQTL Z files
 library(data.table)
 library(dplyr)
 
