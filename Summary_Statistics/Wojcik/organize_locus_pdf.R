@@ -19,4 +19,10 @@ for(file in white){
 }
 total <- c(AFHI_low_p3_files, total)
 print(total)
-CAU_low_p3_files <- c('/home/elyse/sig_genes_models/AMR_LD_C-reactive_CAU_ADAR.png')
+CAU_low_p3_files <- c('/home/elyse/sig_genes_models/AMR_LD_C-reactive_CAU_ADAR.png', '/home/elyse/sig_genes_models/AMR_LD_LDL_cholesterol_CAU_DOCK7.png', '/home/elyse/sig_genes_models/AMR_LD_LDL_cholesterol_CAU_PSRC1.png','/home/elyse/sig_genes_models/AMR_LD_LDL_cholesterol_CAU_TMEM258.png'
+                     , '/home/elyse/sig_genes_models/AMR_LD_LDL_cholesterol_CAU_POC5.png', '/home/elyse/sig_genes_models/AMR_LD_LDL_cholesterol_CAU_USP24.png', '/home/elyse/sig_genes_models/AMR_LD_White_blood_CAU_MED24.png',
+                     '/home/elyse/sig_genes_models/AMR_LD_White_blood_CAU_CASC3.png', '/home/elyse/sig_genes_models/AMR_LD_White_blood_CAU_MRPL24.png', '/home/elyse/sig_genes_models/AMR_LD_White_blood_CAU_ILF2.png',
+                     '/home/elyse/sig_genes_models/AMR_LD_White_blood_CAU_HIST2H2AC.png')
+
+
+
