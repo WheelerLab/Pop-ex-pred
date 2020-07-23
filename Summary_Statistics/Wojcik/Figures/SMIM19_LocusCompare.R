@@ -1,0 +1,16 @@
+library(cowplot)
+library(ggplot2)
+library(png)
+library(pdftools)
+
+p1 <- readPNG("/home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/LocusCompare/AMR_LD_Mean_corpuscular_hemoglobin_AFHI_SMIM19.png")
+p2 <- readPNG("/home/egeoffroy/Summary_Statistics/Summary_Stats/Wojcik/LocusCompare/EUR_LD_Mean_corpuscular_hemoglobin_EUR_SMIM19.png")
+p1 <- grid::rasterGrob(p1)
+p2 <- grid::rasterGrob(p2)
+tiff('SMIM19_LocusCompare_figs.tiff', width = 900, height = 1400)
+plot_grid(p1, p2, labels = c('A', 'B'), label_size = 12, nrow = 2)
+dev.off()
+
+png('SMIM19_LocusCompare_figs.png', width = 900, height = 1400)
+plot_grid(p1, p2, labels = c('A', 'B'), label_size = 12, nrow = 2)
+dev.off()
